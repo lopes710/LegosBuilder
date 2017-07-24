@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LegosBuilder_Example' do
+  pod 'LegosBuilder', :path => '../'
+
+  target 'LegosBuilder_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
