@@ -1,0 +1,6 @@
+framework module LegosBuilder {
+  umbrella header "LegosBuilder-umbrella.h"
+
+  export *
+  module * { export * }
+}

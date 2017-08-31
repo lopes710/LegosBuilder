@@ -1,0 +1,6 @@
+framework module Pods_LegosBuilder_Example {
+  umbrella header "Pods-LegosBuilder_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
