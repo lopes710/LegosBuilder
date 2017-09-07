@@ -7,6 +7,5 @@ target 'LegosBuilder_Example' do
   target 'LegosBuilder_Tests' do
     inherit! :search_paths
 
-    
   end
 end

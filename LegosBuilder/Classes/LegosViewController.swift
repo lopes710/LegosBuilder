@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 9.0, *)
-class LegosViewController: UIViewController {
+open class LegosViewController: UIViewController {
     
     // MARK: Properties
     
@@ -40,14 +40,14 @@ class LegosViewController: UIViewController {
         self.defineSubviewsConstraints()
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.defineSubviews()
         self.defineSubviewsConstraints()
     }
     
-    override func loadView() {
+    override open func loadView() {
         super.loadView()
         
         self.view = self.scrollView
@@ -76,7 +76,7 @@ fileprivate extension LegosViewController {
 // MARK: Public methods
 
 @available(iOS 9.0, *)
-extension LegosViewController {
+public extension LegosViewController {
     
     // TODO: Later create and change to type ComponentView (or ModuleView, or LegoView?) (Also LegoView, same as Component can be a protocol)
     func insertLegosViews(_ legosViews: [UIView]) {

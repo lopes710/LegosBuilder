@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302E01BA1F6209F3008A7D3B /* RedTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 30D190A71F62088E00225CE9 /* RedTableViewCell.xib */; };
+		302E01BB1F6209F3008A7D3B /* TableView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 307342C21F61FEF200C29720 /* TableView.xib */; };
+		30D190A51F62084C00225CE9 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307342C31F61FEF200C29720 /* TableView.swift */; };
+		30D190A91F62089200225CE9 /* RedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D190A81F62088E00225CE9 /* RedTableViewCell.swift */; };
 		3AF16A77027777984363DB1A /* Pods_LegosBuilder_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A371B30FA63CD0A5E5102FF /* Pods_LegosBuilder_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		2832D37C9D043E3199B102A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		307342C21F61FEF200C29720 /* TableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
+		307342C31F61FEF200C29720 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		30D190A71F62088E00225CE9 /* RedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedTableViewCell.xib; sourceTree = "<group>"; };
+		30D190A81F62088E00225CE9 /* RedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableViewCell.swift; sourceTree = "<group>"; };
 		5A371B30FA63CD0A5E5102FF /* Pods_LegosBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegosBuilder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* LegosBuilder_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegosBuilder_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +77,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		307342C11F61FEE200C29720 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30D190A61F62087D00225CE9 /* Cells */,
+				307342C31F61FEF200C29720 /* TableView.swift */,
+				307342C21F61FEF200C29720 /* TableView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30D190A61F62087D00225CE9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				30D190A81F62088E00225CE9 /* RedTableViewCell.swift */,
+				30D190A71F62088E00225CE9 /* RedTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5268325F3BF7BA8A61A746E1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +131,7 @@
 		607FACD21AFB9204008FA782 /* Example for LegosBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				307342C11F61FEE200C29720 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -361,8 +389,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E01BA1F6209F3008A7D3B /* RedTableViewCell.xib in Sources */,
+				302E01BB1F6209F3008A7D3B /* TableView.xib in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				30D190A51F62084C00225CE9 /* TableView.swift in Sources */,
+				30D190A91F62089200225CE9 /* RedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,7 +533,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -515,7 +547,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

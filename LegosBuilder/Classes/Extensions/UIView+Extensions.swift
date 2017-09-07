@@ -26,12 +26,13 @@ public extension UIView {
     }
     
     // Loads a XIB file into a view and returns this view.
-    public func viewFromNibForClass() -> UIView {
+    public func registerXib() {
         
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
         let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
         
-        return view
+        view.frame = self.bounds
+        self.addSubview(view)
     }
 }
