@@ -1,26 +1,16 @@
 //
-//  LegosViewController.swift
-//  Lego
+//  LegosView.swift
+//  LegosBuilder
 //
-//  Created by Duarte Lopes on 30/06/2017.
-//  Copyright © 2017 Duarte Lopes. All rights reserved.
+//  Created by Duarte Lopes on 08/08/2018.
 //
 
 import UIKit
 
 @available(iOS 9.0, *)
-open class LegosViewController: UIViewController {
+open class LegosView: UIScrollView {
     
-    // MARK: Properties
-    
-    fileprivate let scrollView: UIScrollView = {
-    
-        let scrollView = UIScrollView()
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
-    }()
-    
-    fileprivate let stackView: UIStackView = {
+    private let stackView: UIStackView = {
         
         let stackView = UIStackView()
         // TODO: make this properties editable?
@@ -31,53 +21,45 @@ open class LegosViewController: UIViewController {
         return stackView
     }()
     
-    // MARK: Lifecycle
-    
-    init() {
+    public init() {
+        super.init(frame: .zero)
 
-        super.init(nibName: nil, bundle: nil)
         self.defineSubviews()
         self.defineSubviewsConstraints()
     }
-
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.defineSubviews()
         self.defineSubviewsConstraints()
     }
-    
-    override open func loadView() {
-        super.loadView()
-        
-        self.view = self.scrollView
-    }
 }
 
-// MARK: Private methods
+// MARK: Private
 
 @available(iOS 9.0, *)
-fileprivate extension LegosViewController {
+private extension LegosView {
     
     func defineSubviews() {
         
-        self.scrollView.addSubview(self.stackView)
-        self.scrollView.backgroundColor = .white
+        self.addSubview(self.stackView)
+        self.backgroundColor = .white
     }
     
     func defineSubviewsConstraints() {
         
-        self.stackView.pinToBounds(of: self.scrollView)
+        self.stackView.pinToBounds(of: self)
         NSLayoutConstraint.activate([
-            self.stackView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor)
+            self.stackView.widthAnchor.constraint(equalTo: self.widthAnchor)
             ])
     }
 }
 
-// MARK: Public methods
+// MARK: Public
 
 @available(iOS 9.0, *)
-public extension LegosViewController {
+public extension LegosView {
     
     // TODO: Later create and change to type ComponentView (or ModuleView, or LegoView?) (Also LegoView, same as Component can be a protocol)
     func insertLegosViews(_ legosViews: [UIView]) {

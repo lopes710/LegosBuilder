@@ -25,8 +25,8 @@ public extension UIView {
             ])
     }
     
-    // Loads a XIB file into a view and returns this view.
-    public func registerXib() {
+    // Loads a XIB file into a view.
+    public func registerSameNameXib() {
         
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)

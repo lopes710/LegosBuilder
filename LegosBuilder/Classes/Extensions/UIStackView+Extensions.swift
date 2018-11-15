@@ -15,7 +15,7 @@ public extension UIStackView {
         
         for view in views {
             
-            addArrangedSubview(view)
+            self.addArrangedSubview(view)
         }
     }
     
@@ -23,7 +23,7 @@ public extension UIStackView {
         
         for view in views {
             
-            removeArrangedSubview(view)
+            self.removeArrangedSubview(view)
         }
     }
     
@@ -31,7 +31,7 @@ public extension UIStackView {
         
         for view in arrangedSubviews {
             
-            removeArrangedSubview(view)
+            self.removeArrangedSubview(view)
         }
     }
 }

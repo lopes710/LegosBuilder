@@ -22,20 +22,10 @@ class TableView: UIView {
         setupView()
     }
     
-    // MARK: - Private Helper Methods
-    
     // Performs the initial setup.
     private func setupView() {
         
-//        let view = self.viewFromNibForClass()
-//        view.frame = bounds
-//
-//        // Show the view.
-//        addSubview(view)
-        
-//        self.viewFromNibForClass()
-        
-        self.registerXib()
+        self.registerSameNameXib()
         
         let cellNib = UINib(nibName: String(describing: RedTableViewCell.self), bundle: Bundle.main)
         self.tableView.register(cellNib, forCellReuseIdentifier: "cell")

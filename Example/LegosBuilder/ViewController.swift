@@ -9,11 +9,39 @@
 import UIKit
 import LegosBuilder
 
-class ViewController: LegosViewController {
+class ViewController: UIViewController {
+    
+    private let legosView = LegosView()
+
+    private let titleComponent: TitleComponent = {
+
+        let titleComponent = TitleComponent()
+        titleComponent.translatesAutoresizingMaskIntoConstraints = false
+        return titleComponent
+    }()
+    
+    private let emptyComponent: EmptyComponent = {
+        
+        let emptyComponent = EmptyComponent()
+        emptyComponent.translatesAutoresizingMaskIntoConstraints = false
+        return emptyComponent
+    }()
+    
+    private let tableView = TableView()
+    
+    override func loadView() {
+        
+        self.view = self.legosView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.insertLegoView(TableView())
+        self.legosView.insertLegosViews([
+            self.emptyComponent,
+            self.titleComponent
+            ])
+
+        self.titleComponent.render(with: TitleComponent.Configuration(title: "Title Component"))
     }
 }
