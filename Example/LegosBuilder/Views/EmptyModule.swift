@@ -1,5 +1,5 @@
 //
-//  EmptyComponent.swift
+//  EmptyModule.swift
 //  LegosBuilder_Example
 //
 //  Created by Duarte Lopes on 13/11/2018.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class EmptyComponent: UIView {
+final class EmptyModule: UIView {
     
     init() {
         super.init(frame: .zero)

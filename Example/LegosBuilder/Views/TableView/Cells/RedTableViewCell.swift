@@ -10,5 +10,7 @@ import UIKit
 
 class RedTableViewCell: UITableViewCell {
     
+    static let reuseIdentifier = "RedCell"
+    
     @IBOutlet weak var titleLabel: UILabel!
 }

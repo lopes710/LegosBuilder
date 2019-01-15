@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		302E01BA1F6209F3008A7D3B /* RedTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 30D190A71F62088E00225CE9 /* RedTableViewCell.xib */; };
-		302E01BB1F6209F3008A7D3B /* TableView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 307342C21F61FEF200C29720 /* TableView.xib */; };
-		30726561219B91AA006570A0 /* EmptyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30726560219B91AA006570A0 /* EmptyComponent.swift */; };
-		30823947211B919C0017BFCB /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30823946211B919C0017BFCB /* Component.swift */; };
-		30823949211B91ED0017BFCB /* TitleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30823948211B91ED0017BFCB /* TitleComponent.swift */; };
-		30D190A51F62084C00225CE9 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307342C31F61FEF200C29720 /* TableView.swift */; };
+		306C432821B0B704002A224F /* BlueCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306C432621B0B704002A224F /* BlueCollectionViewCell.swift */; };
+		306C432921B0B704002A224F /* BlueCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 306C432721B0B704002A224F /* BlueCollectionViewCell.xib */; };
+		30726561219B91AA006570A0 /* EmptyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30726560219B91AA006570A0 /* EmptyModule.swift */; };
+		30823949211B91ED0017BFCB /* TitleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30823948211B91ED0017BFCB /* TitleModule.swift */; };
 		30D190A91F62089200225CE9 /* RedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D190A81F62088E00225CE9 /* RedTableViewCell.swift */; };
 		3AF16A77027777984363DB1A /* Pods_LegosBuilder_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A371B30FA63CD0A5E5102FF /* Pods_LegosBuilder_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -35,11 +34,10 @@
 
 /* Begin PBXFileReference section */
 		2832D37C9D043E3199B102A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		30726560219B91AA006570A0 /* EmptyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyComponent.swift; sourceTree = "<group>"; };
-		307342C21F61FEF200C29720 /* TableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableView.xib; sourceTree = "<group>"; };
-		307342C31F61FEF200C29720 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		30823946211B919C0017BFCB /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
-		30823948211B91ED0017BFCB /* TitleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleComponent.swift; sourceTree = "<group>"; };
+		306C432621B0B704002A224F /* BlueCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCollectionViewCell.swift; sourceTree = "<group>"; };
+		306C432721B0B704002A224F /* BlueCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueCollectionViewCell.xib; sourceTree = "<group>"; };
+		30726560219B91AA006570A0 /* EmptyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModule.swift; sourceTree = "<group>"; };
+		30823948211B91ED0017BFCB /* TitleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModule.swift; sourceTree = "<group>"; };
 		30D190A71F62088E00225CE9 /* RedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RedTableViewCell.xib; sourceTree = "<group>"; };
 		30D190A81F62088E00225CE9 /* RedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableViewCell.swift; sourceTree = "<group>"; };
 		5A371B30FA63CD0A5E5102FF /* Pods_LegosBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LegosBuilder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,26 +83,16 @@
 			isa = PBXGroup;
 			children = (
 				30B551E3219B8EAB000C58DC /* TableView */,
-				30823948211B91ED0017BFCB /* TitleComponent.swift */,
-				30726560219B91AA006570A0 /* EmptyComponent.swift */,
+				30823948211B91ED0017BFCB /* TitleModule.swift */,
+				30726560219B91AA006570A0 /* EmptyModule.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		30823945211B918B0017BFCB /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				30823946211B919C0017BFCB /* Component.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		30B551E3219B8EAB000C58DC /* TableView */ = {
 			isa = PBXGroup;
 			children = (
 				30D190A61F62087D00225CE9 /* Cells */,
-				307342C31F61FEF200C29720 /* TableView.swift */,
-				307342C21F61FEF200C29720 /* TableView.xib */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -114,6 +102,8 @@
 			children = (
 				30D190A81F62088E00225CE9 /* RedTableViewCell.swift */,
 				30D190A71F62088E00225CE9 /* RedTableViewCell.xib */,
+				306C432621B0B704002A224F /* BlueCollectionViewCell.swift */,
+				306C432721B0B704002A224F /* BlueCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -153,7 +143,6 @@
 		607FACD21AFB9204008FA782 /* Example for LegosBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				30823945211B918B0017BFCB /* Protocols */,
 				307342C11F61FEE200C29720 /* Views */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -269,7 +258,7 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0920;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -299,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				306C432921B0B704002A224F /* BlueCollectionViewCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,14 +400,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30726561219B91AA006570A0 /* EmptyComponent.swift in Sources */,
+				30726561219B91AA006570A0 /* EmptyModule.swift in Sources */,
 				302E01BA1F6209F3008A7D3B /* RedTableViewCell.xib in Sources */,
-				30823947211B919C0017BFCB /* Component.swift in Sources */,
-				302E01BB1F6209F3008A7D3B /* TableView.xib in Sources */,
+				306C432821B0B704002A224F /* BlueCollectionViewCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				30823949211B91ED0017BFCB /* TitleComponent.swift in Sources */,
+				30823949211B91ED0017BFCB /* TitleModule.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				30D190A51F62084C00225CE9 /* TableView.swift in Sources */,
 				30D190A91F62089200225CE9 /* RedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +571,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -599,7 +588,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

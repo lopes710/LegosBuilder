@@ -8,7 +8,7 @@
 import UIKit
 
 @available(iOS 9.0, *)
-open class LegosView: UIScrollView {
+open class ScrollableLegosView: UIScrollView {
     
     private let stackView: UIStackView = {
         
@@ -26,6 +26,8 @@ open class LegosView: UIScrollView {
 
         self.defineSubviews()
         self.defineSubviewsConstraints()
+        
+        self.setContentCompressionResistancePriority(UILayoutPriority.required, for: .vertical)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -39,7 +41,7 @@ open class LegosView: UIScrollView {
 // MARK: Private
 
 @available(iOS 9.0, *)
-private extension LegosView {
+private extension ScrollableLegosView {
     
     func defineSubviews() {
         
@@ -59,7 +61,7 @@ private extension LegosView {
 // MARK: Public
 
 @available(iOS 9.0, *)
-public extension LegosView {
+public extension ScrollableLegosView {
     
     // TODO: Later create and change to type ComponentView (or ModuleView, or LegoView?) (Also LegoView, same as Component can be a protocol)
     func insertLegosViews(_ legosViews: [UIView]) {

@@ -1,5 +1,5 @@
 //
-//  LegosView2.swift
+//  StaticLegosView.swift
 //  LegosBuilder
 //
 //  Created by Duarte Lopes on 08/08/2018.
@@ -8,7 +8,7 @@
 import UIKit
 
 @available(iOS 9.0, *)
-open class LegosView2: UIView {
+open class StaticLegosView: UIView {
     
     private let stackView: UIStackView = {
         
@@ -39,7 +39,7 @@ open class LegosView2: UIView {
 // MARK: Private
 
 @available(iOS 9.0, *)
-private extension LegosView2 {
+private extension StaticLegosView {
     
     func defineSubviews() {
 
@@ -59,7 +59,7 @@ private extension LegosView2 {
 // MARK: Public
 
 @available(iOS 9.0, *)
-public extension LegosView2 {
+public extension StaticLegosView {
     
     func insertLegosViews(_ legosViews: [UIView]) {
         

@@ -1,5 +1,5 @@
 //
-//  TitleComponent.swift
+//  TitleModule.swift
 //  LegosBuilder_Example
 //
 //  Created by Duarte Lopes on 08/08/2018.
@@ -9,7 +9,7 @@
 import UIKit
 import LegosBuilder
 
-final class TitleComponent: LegosView2, Component {
+final class TitleModule: StaticLegosView {
 
     private let titleLabel: UILabel = {
         
@@ -18,18 +18,11 @@ final class TitleComponent: LegosView2, Component {
         return label
     }()
     
-    private let emptyComponent: EmptyComponent = {
+    private let emptyComponent: EmptyModule = {
         
-        let emptyComponent = EmptyComponent()
+        let emptyComponent = EmptyModule()
         emptyComponent.translatesAutoresizingMaskIntoConstraints = false
         return emptyComponent
-    }()
-    
-    private let tableView: TableView = {
-        
-        let tableView = TableView()
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
     }()
     
     override init() {
@@ -51,13 +44,12 @@ final class TitleComponent: LegosView2, Component {
         
         self.insertLegoView(self.titleLabel)
         self.insertLegoView(self.emptyComponent)
-        self.insertLegoView(self.tableView)
     }
 }
 
 // MARK: Component
 
-extension TitleComponent {
+extension TitleModule {
     
     struct Configuration {
 
