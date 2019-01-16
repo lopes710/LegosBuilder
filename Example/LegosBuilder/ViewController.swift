@@ -47,12 +47,17 @@ class ViewController: UIViewController {
         self.legosTableView.dataSource = self
         
         self.registerCells()
+        
+        let x = SpacingView(spacing: 50.0, backgroundColor: .purple)
 
         self.legosView.insertLegosViews([
             self.emptyComponent,
+            x,
             self.titleComponent,
             self.legosTableView,
-            self.legoCollectionView
+            x.clone,
+            self.legoCollectionView,
+            x.clone
             ])
 
         self.titleComponent.render(with: TitleModule.Configuration(title: "Title Component"))

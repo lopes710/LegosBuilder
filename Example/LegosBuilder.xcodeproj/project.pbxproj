@@ -82,19 +82,11 @@
 		307342C11F61FEE200C29720 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				30B551E3219B8EAB000C58DC /* TableView */,
+				30D190A61F62087D00225CE9 /* Cells */,
 				30823948211B91ED0017BFCB /* TitleModule.swift */,
 				30726560219B91AA006570A0 /* EmptyModule.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		30B551E3219B8EAB000C58DC /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				30D190A61F62087D00225CE9 /* Cells */,
-			);
-			path = TableView;
 			sourceTree = "<group>";
 		};
 		30D190A61F62087D00225CE9 /* Cells */ = {

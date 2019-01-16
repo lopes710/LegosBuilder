@@ -63,7 +63,6 @@ private extension ScrollableLegosView {
 @available(iOS 9.0, *)
 public extension ScrollableLegosView {
     
-    // TODO: Later create and change to type ComponentView (or ModuleView, or LegoView?) (Also LegoView, same as Component can be a protocol)
     func insertLegosViews(_ legosViews: [UIView]) {
         
         self.stackView.addArrangedSubviews(legosViews)

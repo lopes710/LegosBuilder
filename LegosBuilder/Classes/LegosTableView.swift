@@ -22,6 +22,7 @@ open class LegosTableView: UITableView {
     
     private func setupView() {
         
+        self.rowHeight = 44.0
         self.isScrollEnabled = false
     }
     

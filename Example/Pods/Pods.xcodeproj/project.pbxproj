@@ -11,6 +11,7 @@
 		235318134A66EC43268C8A9608D12611 /* Pods-LegosBuilder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D274716C03644DC166258CBDC6BDCCD9 /* Pods-LegosBuilder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		305F7EA621ED4C1400EE7FD7 /* LegosCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3071952B21C9C90D00F12BF5 /* LegosCollectionView.swift */; };
 		305F7EAA21ED551D00EE7FD7 /* LegosTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F7EA921ED551D00EE7FD7 /* LegosTableView.swift */; };
+		305F7EAC21EE9E1100EE7FD7 /* SpacingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305F7EAB21EE9E1100EE7FD7 /* SpacingView.swift */; };
 		30814E34219E33450078684B /* StaticLegosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30814E33219E33450078684B /* StaticLegosView.swift */; };
 		3082394B211BA32A0017BFCB /* ScrollableLegosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3082394A211BA32A0017BFCB /* ScrollableLegosView.swift */; };
 		5861A3C43D92418A50A4426E5D965587 /* LegosBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B783E2D3B3E7AF3C16A608203EED73A /* LegosBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 		2B783E2D3B3E7AF3C16A608203EED73A /* LegosBuilder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LegosBuilder-umbrella.h"; sourceTree = "<group>"; };
 		2E0EEA79405AFC6DD77897CA6E25D68B /* Pods-LegosBuilder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LegosBuilder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		305F7EA921ED551D00EE7FD7 /* LegosTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegosTableView.swift; sourceTree = "<group>"; };
+		305F7EAB21EE9E1100EE7FD7 /* SpacingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacingView.swift; sourceTree = "<group>"; };
 		3071952B21C9C90D00F12BF5 /* LegosCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegosCollectionView.swift; sourceTree = "<group>"; };
 		30814E33219E33450078684B /* StaticLegosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticLegosView.swift; sourceTree = "<group>"; };
 		3082394A211BA32A0017BFCB /* ScrollableLegosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableLegosView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				3071952B21C9C90D00F12BF5 /* LegosCollectionView.swift */,
 				3082394A211BA32A0017BFCB /* ScrollableLegosView.swift */,
 				30814E33219E33450078684B /* StaticLegosView.swift */,
+				305F7EAB21EE9E1100EE7FD7 /* SpacingView.swift */,
 				DB656224F09186EFDC489ED1C99B45B9 /* Extensions */,
 			);
 			path = Classes;
@@ -372,6 +375,7 @@
 				305F7EAA21ED551D00EE7FD7 /* LegosTableView.swift in Sources */,
 				3082394B211BA32A0017BFCB /* ScrollableLegosView.swift in Sources */,
 				8207807934B1D9979F95D4016D70B4E8 /* UIStackView+Extensions.swift in Sources */,
+				305F7EAC21EE9E1100EE7FD7 /* SpacingView.swift in Sources */,
 				30814E34219E33450078684B /* StaticLegosView.swift in Sources */,
 				EB603D8D170D5720BE810AC7770118C6 /* UIView+Extensions.swift in Sources */,
 				305F7EA621ED4C1400EE7FD7 /* LegosCollectionView.swift in Sources */,
