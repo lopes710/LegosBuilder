@@ -8,9 +8,9 @@
 import UIKit
 
 @available(iOS 9.0, *)
-open class ScrollableLegosView: UIScrollView {
+open class ScrollableLegosView: UIScrollView, StackableLegoViews {
     
-    private let stackView: UIStackView = {
+    public let stackView: UIStackView = {
         
         let stackView = UIStackView()
         // TODO: make this properties editable?
@@ -55,26 +55,5 @@ private extension ScrollableLegosView {
         NSLayoutConstraint.activate([
             self.stackView.widthAnchor.constraint(equalTo: self.widthAnchor)
             ])
-    }
-}
-
-// MARK: Public
-
-@available(iOS 9.0, *)
-public extension ScrollableLegosView {
-    
-    func insertLegosViews(_ legosViews: [UIView]) {
-        
-        self.stackView.addArrangedSubviews(legosViews)
-    }
-    
-    func insertLegoView(_ legoView: UIView) {
-        
-        self.stackView.addArrangedSubview(legoView)
-    }
-    
-    func insertLegoView(_ legoView: UIView, atIndex index: Int) {
-        
-        self.stackView.insertArrangedSubview(legoView, at: index)
     }
 }

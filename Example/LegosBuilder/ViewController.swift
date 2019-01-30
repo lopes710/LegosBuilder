@@ -55,7 +55,7 @@ class ViewController: UIViewController {
             x,
             self.titleComponent,
             self.legosTableView,
-            x.clone,
+            300,
             self.legoCollectionView,
             x.clone
             ])

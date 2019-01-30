@@ -8,9 +8,9 @@
 import UIKit
 
 @available(iOS 9.0, *)
-open class StaticLegosView: UIView {
+open class StaticLegosView: UIView, StackableLegoViews {
     
-    private let stackView: UIStackView = {
+    public let stackView: UIStackView = {
         
         let stackView = UIStackView()
         // TODO: make this properties editable?
@@ -55,25 +55,3 @@ private extension StaticLegosView {
         ])
     }
 }
-
-// MARK: Public
-
-@available(iOS 9.0, *)
-public extension StaticLegosView {
-    
-    func insertLegosViews(_ legosViews: [UIView]) {
-        
-        self.stackView.addArrangedSubviews(legosViews)
-    }
-    
-    func insertLegoView(_ legoView: UIView) {
-        
-        self.stackView.addArrangedSubview(legoView)
-    }
-    
-    func insertLegoView(_ legoView: UIView, atIndex index: Int) {
-        
-        self.stackView.insertArrangedSubview(legoView, at: index)
-    }
-}
-
